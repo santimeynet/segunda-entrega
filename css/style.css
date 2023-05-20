@@ -1,0 +1,96 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 5rem;
+}
+
+h3{
+    font-size: 1rem;
+    color: black;
+}
+
+h4{
+    position: fixed;
+    bottom: 2px;
+    right: 20px;
+}
+
+/* estilos del main */
+
+.div-nav{
+    margin-left: 40rem;
+}
+
+.div-home{
+    background-image: url(../img/main-portada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: whitesmoke;
+    padding: 8rem;
+}
+
+.reserva{
+    display: flex;
+    color: black;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section-home{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 0.2rem;
+}
+
+.caba-rosa{
+    background-image: url(../img/habitacion-rosa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.caba-celeste{
+    background-image: url(../img/habitacion-celeste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.caba-amarilla{
+    background-image: url(../img/habitacion-amarilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.caba-verde{
+    background-image: url(../img/habitacion-verde.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+#caba{
+    text-align: center;
+}
+
+#link-caba{
+    text-decoration: none;
+    color: whitesmoke;
+}
