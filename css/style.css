@@ -9,15 +9,23 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
 }
 
 header{
     height: 5rem;
+    background-color: white;
 }
 
 h3{
     font-size: 1rem;
-    color: black;
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
 }
 
 h4{
@@ -93,4 +101,27 @@ h4{
 #link-caba{
     text-decoration: none;
     color: whitesmoke;
+}
+
+/* estilos de contacto */
+
+.section-contacto{
+    margin-top: 2rem;
+    padding: 3rem;
+    background-image: url(../img/fondo-contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-maps{
+    margin-left: 15rem;
+}
+
+.box-contacto{
+    text-align: center;
+    margin-left: 8rem;
 }
