@@ -40,13 +40,17 @@ h4{
     margin-left: 40rem;
 }
 
-.div-home{
+#div-home{
     background-image: url(../img/main-portada.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     color: whitesmoke;
     padding: 8rem;
+}
+
+#div-home h1{
+    font-weight: 900;
 }
 
 .reserva{
@@ -105,23 +109,63 @@ h4{
 
 /* estilos de contacto */
 
-.section-contacto{
-    margin-top: 2rem;
-    padding: 3rem;
-    background-image: url(../img/fondo-contacto.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 2rem;
+#box-contacto h1{
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+#box-contacto label{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 1.2rem;
+}
+
+#box-contacto input,
+#box-contacto textarea{
+    width: 80rem;
+    padding: 10px;
+    margin-left: 1.2rem;
+}
+
+#boton-contacto{
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-weight: 300;
+}
+
+#box-img-ct{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 5rem;
 }
 
-.div-maps{
-    margin-left: 15rem;
-}
-
-.box-contacto{
+.box-telefono, .box-direccion, .box-mail{
     text-align: center;
-    margin-left: 8rem;
+    margin-bottom: 2rem;
+    padding: 5rem;
+    color: whitesmoke;
+    width: 100%;
+}
+.box-telefono{
+    background-image: url(../img/contacto-telefono.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-direccion{
+    background-image: url(../img/contacto-mapa.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-mail{
+    background-image: url(../img/contacto-mail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
