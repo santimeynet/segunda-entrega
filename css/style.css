@@ -34,6 +34,10 @@ h4{
     right: 20px;
 }
 
+.ul{
+    color: black;
+}
+
 /* estilos del main */
 
 .div-nav{
@@ -139,7 +143,18 @@ h4{
 
 #box-img-ct{
     display: flex;
-    margin-top: 5rem;
+    margin-top: 2rem;
+}
+
+#box-mapa{
+    margin-left: 18rem;
+    margin-top: 2rem;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .box-telefono, .box-direccion, .box-mail{
@@ -168,4 +183,31 @@ h4{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* estilos de promos */
+
+.grid-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.box-uno, .box-tres, .box-cinco{
+    padding: 80px 30px;
+}
+
+.box-dos{
+    background-image: url(../img/promo-uno.jpg);
+}
+
+.box-cuatro{
+    background-image: url(../img/promo-dos.jpg);
+    padding: 10rem;
+}
+
+.box-seis{
+    background-image: url(../img/promo-tres.jpg);
+    padding: 10rem;
 }
