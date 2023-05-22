@@ -38,10 +38,14 @@ h4{
     color: black;
 }
 
+.nav-color{
+    background-color: white !important;
+}
+
 /* estilos del main */
 
 .div-nav{
-    margin-left: 40rem;
+    margin-left: 40%;
 }
 
 #div-home{
@@ -233,7 +237,7 @@ h4{
 }
 
 .texto-promo{
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .boton-promo{
@@ -310,4 +314,95 @@ h4{
 
 #body-galeria{
     background-color: black;
+}
+
+/* mq para mobile */
+
+@media screen and (max-width:600px){
+    /* estilos de inicio-mobile */
+    .reserva{
+        display: block;
+        text-align: center;
+    }
+    
+    .boton-reserva{
+        color: whitesmoke;
+        background-color: black;
+        padding: 0.3rem;
+    }
+
+    .section-home{
+        display: block;
+    }
+
+    footer{
+        text-align: start;
+    }
+
+    .div-nav{
+        margin-left: 0;
+    }
+
+    /* estilos de contacto-mobile */
+
+    #box-contacto div h1{
+        text-align: center;
+    }
+
+    #box-contacto input,
+    #box-contacto textarea{
+        width: 75vh;
+    }
+
+    #box-img-ct{
+        display: block;
+        margin-bottom: 1rem;
+        
+    }
+
+    .box-telefono, .box-direccion, .box-mail{
+        margin-bottom: 0;
+    }
+
+    #box-mapa{
+        display: none;
+    }
+
+    /* estilos de promos-mobile */
+
+    .grid-promos{
+        grid-template-columns: 50% 50%;
+    }
+
+    .box-dos{
+        grid-column: span 1;
+    }
+
+    .box-cuatro{
+        grid-column: span 1;
+    }
+
+    .box-seis{
+        grid-column: span 1;
+    }
+
+    /* estilos de servicios-mobile */
+
+    .box-servicios{
+        display: block;
+    }
+
+    /* estilos de galeria-mobile */
+
+    .box-galeria{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 33%);
+        
+    }
+
+    .foto-cinco, .foto-uno, .foto-cuatro, .foto-siete{
+        display: none;
+    }
 }
