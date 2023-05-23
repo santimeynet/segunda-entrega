@@ -204,10 +204,7 @@ h4{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.box-uno, .box-tres, .box-cinco{
-    
+    width: 100%;
 }
 
 .box-dos{
@@ -357,6 +354,7 @@ h4{
     #box-img-ct{
         display: block;
         margin-bottom: 1rem;
+        overflow: hidden;
         
     }
 
@@ -371,6 +369,9 @@ h4{
     /* estilos de promos-mobile */
 
     .grid-promos{
+        overflow: hidden;
+        max-width: 100vh;
+        height: auto;
         grid-template-columns: 50% 50%;
     }
 
@@ -395,6 +396,7 @@ h4{
     /* estilos de galeria-mobile */
 
     .box-galeria{
+        overflow: hidden;
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr;
