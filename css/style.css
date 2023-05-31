@@ -84,6 +84,7 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
+    padding-top: 1rem;
 }
 
 .caba-celeste{
@@ -91,6 +92,7 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
+    padding-top: 1rem;
 }
 
 .caba-amarilla{
@@ -98,6 +100,7 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
+    padding-top: 1rem;
 }
 
 .caba-verde{
@@ -105,6 +108,7 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
+    padding-top: 1rem;
 }
 
 #caba{
@@ -316,6 +320,8 @@ section div a ul{
 #body-galeria{
     background-color: black;
 }
+
+/* estilos de caba rosa */
 
 /* mq para mobile */
 
