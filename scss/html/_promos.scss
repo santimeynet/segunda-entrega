@@ -11,6 +11,10 @@ main{
         .grid-box{
             @include background;
             width: 100%;
+            p{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
             .texto-promo{
                 margin-top: 1rem;
             }

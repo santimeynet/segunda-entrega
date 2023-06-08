@@ -11,7 +11,7 @@ body{
 
 header{
     height: 5rem;
-    background-color: $color-header
+    background-color: $color-header;
 }
 
 .ul{
@@ -20,6 +20,7 @@ header{
 
 header .nav-color{
     background-color: $color-header !important;
+    z-index: 2;
 }
 
 footer{
@@ -46,6 +47,7 @@ header nav div .div-nav{
 
 main{
     #div-home{
+        z-index: 1;
         @include banner;
         h1{
             font-weight: 900;
