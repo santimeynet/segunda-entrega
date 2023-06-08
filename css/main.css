@@ -224,8 +224,6 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
   background-color: black; }
   #body-galeria .main-galeria .box-galeria {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(4, 25%);
     padding: 2rem;
     row-gap: 0.6rem;
     column-gap: 0.6rem;
@@ -256,18 +254,24 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
       grid-column: span 3; }
 
 /* mq para mobile */
-@media screen and (max-width: 600px) {
-  .main-galeria .animate__animated {
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  .main-galeria .box-galeria {
     overflow: hidden;
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 33%); }
-    .main-galeria .animate__animated .box-galeria .foto-cinco,
-    .main-galeria .animate__animated .box-galeria .foto-uno,
-    .main-galeria .animate__animated .box-galeria .foto-cuatro,
-    .main-galeria .animate__animated .box-galeria .foto-siete {
-      display: none; } }
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  .main-galeria .box-galeria .foto-cinco {
+    display: none; }
+  .main-galeria .box-galeria .foto-uno {
+    display: none; }
+  .main-galeria .box-galeria .foto-cuatro {
+    display: none; }
+  .main-galeria .box-galeria .foto-siete {
+    display: none; } }
 
 #box-contacto div form .area-ct, #box-contacto div form .input-ct {
   width: 80rem;

@@ -47,16 +47,20 @@
 /* mq para mobile */
 @media screen and (max-width:600px){
     .main-galeria{
-        .animate__animated{
-            @include galeria-mobile;
-            .box-galeria{
-                .foto-cinco,
-                .foto-uno,
-                .foto-cuatro,
-                .foto-siete{
-                    display: none;
-                }
+        .box-galeria{
+            @include media-querie-galeria;
+            .foto-cinco{
+                display: none;
+            }
+            .foto-uno{
+                display: none;
+            }
+            .foto-cuatro{
+                display: none;
+            }
+            .foto-siete{
+                display: none;
             }
         }
-}
+    }
 }
