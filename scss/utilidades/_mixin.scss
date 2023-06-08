@@ -1,0 +1,119 @@
+//imports
+@import "vars.scss";
+
+//mixin
+
+@mixin banner{
+    background-image: url(../img/main-portada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $color-principal;
+    padding: 8rem;
+    font-weight: 900;
+}
+
+@mixin reserva{
+    display: flex;
+    color: $color-footer;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@mixin grid-cabas{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 0.2rem;
+}
+
+@mixin cabanias($bg-image){
+    background-image: $bg-image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color-principal;
+    padding-top: 1rem;
+}
+
+@mixin contacto-h1{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+@mixin contacto-label{
+    display: block;
+    margin-top: 10px;
+    margin-left: 1.2rem;
+}
+
+@mixin contacto-btn{
+    background-color: $color-footer;
+    color: $color-principal;
+    margin-left: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-weight: 300;
+}
+
+@mixin mapa{
+    margin-left: 18rem;
+    margin-top: 2rem;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    background-color: $color-footer;
+    padding: 1rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
+@mixin contacto-img($bgd-image){
+    background-image: $bgd-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin grid-promos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@mixin background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin servicios{
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+@mixin box-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 25%);
+    padding: 2rem;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@mixin boton-mq{
+    color: $color-principal;
+    background-color: $color-footer;
+    padding: 0.3rem;
+}

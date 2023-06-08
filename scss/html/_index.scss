@@ -1,0 +1,114 @@
+// imports
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "animate.css";
+
+/* estilos generales */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-principal;
+}
+
+header{
+    height: 5rem;
+    background-color: $color-header
+}
+
+.ul{
+    color: $color-footer;
+}
+
+header .nav-color{
+    background-color: $color-header !important;
+}
+
+footer{
+    background-color: $color-footer;
+    text-align: center;
+    padding-bottom: 0.1rem;
+    h3{
+        font-size: 1rem;
+        color: $color-principal;
+        padding: 1rem;
+        padding-top: 1.3rem;
+    }
+    h4{
+        position: fixed;
+        bottom: 0.5px;
+        right: 20px;
+    }
+}
+
+/* estilos del index */
+header nav div .div-nav{
+    margin-left: 40%;
+}
+
+main{
+    #div-home{
+        @include banner;
+        h1{
+            font-weight: 900;
+        }
+    }
+    section{
+        .reserva{
+            @include reserva;
+        }
+    }
+    .section-home{
+        @include grid-cabas;
+        .caba-rosa{
+            @include cabanias(url(../img/habitacion-rosa.jpg));
+        }
+        .caba-celeste{
+            @include cabanias(url(../img/habitacion-celeste.jpg));
+        }
+        .caba-amarilla{
+            @include cabanias(url(../img/habitacion-amarilla.jpg));
+        }
+        .caba-verde{
+            @include cabanias(url(../img/habitacion-verde.jpg));
+        }
+        .caba{
+            text-align: center;
+            .link-caba{
+                text-decoration: none;
+                color: whitesmoke;
+                ul{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+/* mq para mobile */
+@media screen and (max-width:600px){
+    header{
+        .nav-color{
+            div{
+                .div-nav{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    main{
+        section{
+            .reserva{
+                display: block;
+                text-align: center;
+                .boton-reserva{
+                    @include boton-mq;
+                }
+            }
+        }
+        .section-home{
+            display: block;
+        }
+    }
+    footer{
+        text-align: start;
+    }
+}

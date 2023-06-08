@@ -1,0 +1,318 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+/* estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke; }
+
+header {
+  height: 5rem;
+  background-color: white; }
+
+.ul {
+  color: black; }
+
+header .nav-color {
+  background-color: white !important; }
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding-bottom: 0.1rem; }
+  footer h3 {
+    font-size: 1rem;
+    color: whitesmoke;
+    padding: 1rem;
+    padding-top: 1.3rem; }
+  footer h4 {
+    position: fixed;
+    bottom: 0.5px;
+    right: 20px; }
+
+/* estilos del index */
+header nav div .div-nav {
+  margin-left: 40%; }
+
+main #div-home {
+  background-image: url(../img/main-portada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: whitesmoke;
+  padding: 8rem;
+  font-weight: 900; }
+  main #div-home h1 {
+    font-weight: 900; }
+
+main section .reserva {
+  display: flex;
+  color: black;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; }
+
+main .section-home {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  gap: 0.2rem; }
+  main .section-home .caba-rosa {
+    background-image: url(../img/habitacion-rosa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 1rem; }
+  main .section-home .caba-celeste {
+    background-image: url(../img/habitacion-celeste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 1rem; }
+  main .section-home .caba-amarilla {
+    background-image: url(../img/habitacion-amarilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 1rem; }
+  main .section-home .caba-verde {
+    background-image: url(../img/habitacion-verde.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 1rem; }
+  main .section-home .caba {
+    text-align: center; }
+    main .section-home .caba .link-caba {
+      text-decoration: none;
+      color: whitesmoke; }
+      main .section-home .caba .link-caba ul {
+        padding-left: 0; }
+
+/* mq para mobile */
+@media screen and (max-width: 600px) {
+  header .nav-color div .div-nav {
+    margin-left: 0; }
+  main section .reserva {
+    display: block;
+    text-align: center; }
+    main section .reserva .boton-reserva {
+      color: whitesmoke;
+      background-color: black;
+      padding: 0.3rem; }
+  main .section-home {
+    display: block; }
+  footer {
+    text-align: start; } }
+
+#box-contacto div form .area-ct, #box-contacto div form .input-ct {
+  width: 80rem;
+  padding: 10px;
+  margin-left: 1.2rem; }
+
+.box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  color: whitesmoke;
+  width: 100%; }
+
+main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-cinco {
+  background-color: black;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/* estilos de contacto */
+#box-contacto div h1 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 20px;
+  font-weight: 700; }
+
+#box-contacto div form {
+  margin-left: 1rem; }
+  #box-contacto div form label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 1.2rem; }
+  #box-contacto div form .boton-contacto {
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-weight: 300; }
+
+.box-img-ct {
+  display: flex;
+  margin-top: 2rem; }
+  .box-img-ct .box-telefono {
+    background-image: url(../img/contacto-telefono.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .box-img-ct .box-direccion {
+    background-image: url(../img/contacto-mapa.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .box-img-ct .box-mail {
+    background-image: url(../img/contacto-mail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.box-mapa {
+  margin-left: 18rem;
+  margin-top: 2rem;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 15px 15px 15px 15px; }
+
+#box-contacto div form .area-ct, #box-contacto div form .input-ct {
+  width: 80rem;
+  padding: 10px;
+  margin-left: 1.2rem; }
+
+.box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  color: whitesmoke;
+  width: 100%; }
+
+main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-cinco {
+  background-color: black;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/* estilos de galeria */
+#body-galeria {
+  background-color: black; }
+  #body-galeria main .box-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 25%);
+    padding: 2rem;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    #body-galeria main .box-galeria .fotos {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 8rem; }
+    #body-galeria main .box-galeria .foto-uno {
+      background-image: url(../img/galeria-uno.jpg);
+      grid-column: span 2; }
+    #body-galeria main .box-galeria .foto-dos {
+      background-image: url(../img/galeria-dos.jpg); }
+    #body-galeria main .box-galeria .foto-tres {
+      background-image: url(../img/galeria-tres.jpg); }
+    #body-galeria main .box-galeria .foto-cuatro {
+      background-image: url(../img/galeria-cuatro.jpg);
+      grid-column: span 2; }
+    #body-galeria main .box-galeria .foto-cinco {
+      background-image: url(../img/galeria-cinco.jpg);
+      grid-row: span 2; }
+    #body-galeria main .box-galeria .foto-seis {
+      background-image: url(../img/galeria-seis.jpg); }
+    #body-galeria main .box-galeria .foto-siete {
+      background-image: url(../img/galeria-siete.jpg);
+      grid-column: span 3; }
+
+#box-contacto div form .area-ct, #box-contacto div form .input-ct {
+  width: 80rem;
+  padding: 10px;
+  margin-left: 1.2rem; }
+
+.box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  color: whitesmoke;
+  width: 100%; }
+
+main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-cinco {
+  background-color: black;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/* estilos de promos */
+main .grid-promos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  main .grid-promos .grid-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; }
+    main .grid-promos .grid-box .texto-promo {
+      margin-top: 1rem; }
+    main .grid-promos .grid-box .boton-promo {
+      background-color: whitesmoke;
+      padding: 0.6rem; }
+  main .grid-promos .box-dos {
+    background-image: url(../img/promo-uno.jpg);
+    padding: 10rem;
+    grid-column: span 2; }
+  main .grid-promos .box-cuatro {
+    background-image: url(../img/promo-dos.jpg);
+    padding: 10rem;
+    grid-column: span 2; }
+  main .grid-promos .box-seis {
+    background-image: url(../img/promo-tres.jpg);
+    padding: 10rem;
+    grid-column: span 2; }
+
+#box-contacto div form .area-ct, #box-contacto div form .input-ct {
+  width: 80rem;
+  padding: 10px;
+  margin-left: 1.2rem; }
+
+.box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  color: whitesmoke;
+  width: 100%; }
+
+main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-cinco {
+  background-color: black;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/* estilos de servicios */
+main .box-servicios {
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  font-weight: 700; }
+  main .box-servicios div p {
+    margin-top: 1rem;
+    color: black; }

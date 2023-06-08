@@ -1,0 +1,47 @@
+// imports
+@import "../utilidades/vars";
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+
+/* estilos de contacto */
+#box-contacto{
+    div{
+        h1{
+            @include contacto-h1;
+        }
+        form{
+            margin-left: 1rem;
+            label{
+                @include contacto-label;
+            }
+            .area-ct, .input-ct{
+                @extend %medida-ct;
+            }
+            .boton-contacto{
+                @include contacto-btn;
+            }
+        }
+    }
+}
+
+.box-img-ct{
+    display: flex;
+    margin-top: 2rem;
+    .box-telefono{
+        @extend %box-contacto;
+        @include contacto-img(url(../img/contacto-telefono.jpeg))
+    }
+    .box-direccion{
+        @extend %box-contacto;
+        @include contacto-img(url(../img/contacto-mapa.jfif))
+    }
+    .box-mail{
+        @extend %box-contacto;
+        @include contacto-img(url(../img/contacto-mail.jpg))
+    }
+}
+
+.box-mapa{
+    @include mapa;
+    
+}

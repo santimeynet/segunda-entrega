@@ -1,0 +1,16 @@
+// imports
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de servicios */
+main .box-servicios{
+    @include servicios;
+    div{
+        p{
+            margin-top: 1rem;
+            color: $color-footer;
+        }
+    }
+}

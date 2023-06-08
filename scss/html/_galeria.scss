@@ -1,0 +1,44 @@
+// imports
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de galeria */
+#body-galeria{
+    background-color: $color-footer;
+    main{
+    .box-galeria{
+        @include box-galeria;
+        .fotos{
+            @include background;
+            padding: 8rem;
+        }
+        .foto-uno{
+            background-image: url(../img/galeria-uno.jpg);
+            grid-column: span 2;
+        }
+        .foto-dos{
+            background-image: url(../img/galeria-dos.jpg);
+        }
+        .foto-tres{
+            background-image: url(../img/galeria-tres.jpg);
+        }
+        .foto-cuatro{
+            background-image: url(../img/galeria-cuatro.jpg);
+            grid-column: span 2;
+        }
+        .foto-cinco{
+            background-image: url(../img/galeria-cinco.jpg);
+            grid-row: span 2;
+        }
+        .foto-seis{
+            background-image: url(../img/galeria-seis.jpg);
+        }
+        .foto-siete{
+            background-image: url(../img/galeria-siete.jpg);
+            grid-column: span 3;
+        }
+    }
+}
+}

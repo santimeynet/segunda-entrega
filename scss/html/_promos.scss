@@ -1,0 +1,47 @@
+// imports
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de promos */
+main{
+    .grid-promos{
+        @include grid-promos;
+        .grid-box{
+            @include background;
+            width: 100%;
+            .texto-promo{
+                margin-top: 1rem;
+            }
+            .boton-promo{
+                background-color: $color-principal;
+                padding: 0.6rem;
+            }
+        }
+        .box-dos{
+            background-image: url(../img/promo-uno.jpg);
+            padding: 10rem;
+            grid-column: span 2;
+        }
+        .box-cuatro{
+            background-image: url(../img/promo-dos.jpg);
+            padding: 10rem;
+            grid-column: span 2;
+        }
+        .box-seis{
+            background-image: url(../img/promo-tres.jpg);
+            padding: 10rem;
+            grid-column: span 2;
+        }
+        .box-uno{
+            @extend %box-promo;
+        }
+        .box-tres{
+            @extend %box-promo;
+        }
+        .box-cinco{
+            @extend %box-promo;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// imports
+@import "html/index";
+@import "html/contacto";
+@import "html/galeria";
+@import "html/promos";
+@import "html/servicios";
