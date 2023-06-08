@@ -1,5 +1,6 @@
 /* RESET */
-
+@import url(animate.css);
+@import url(animate.css);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -182,6 +183,23 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
   padding: 1rem;
   border-radius: 15px 15px 15px 15px; }
 
+/* mq para mobile */
+@media screen and (max-width: 600px) {
+  #box-contacto {
+    display: none; }
+  .box-img-ct {
+    display: block;
+    margin-bottom: 1rem;
+    overflow: hidden; }
+    .box-img-ct .box-telefono {
+      margin-bottom: 0; }
+    .box-img-ct .box-direccion {
+      margin-bottom: 0; }
+    .box-img-ct .box-mail {
+      margin-bottom: 0; }
+  .box-mapa {
+    display: none; } }
+
 #box-contacto div form .area-ct, #box-contacto div form .input-ct {
   width: 80rem;
   padding: 10px;
@@ -204,7 +222,7 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
 /* estilos de galeria */
 #body-galeria {
   background-color: black; }
-  #body-galeria main .box-galeria {
+  #body-galeria .main-galeria .box-galeria {
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(4, 25%);
@@ -213,29 +231,43 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
     column-gap: 0.6rem;
     margin-top: 2rem;
     margin-bottom: 2rem; }
-    #body-galeria main .box-galeria .fotos {
+    #body-galeria .main-galeria .box-galeria .fotos {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       padding: 8rem; }
-    #body-galeria main .box-galeria .foto-uno {
+    #body-galeria .main-galeria .box-galeria .foto-uno {
       background-image: url(../img/galeria-uno.jpg);
       grid-column: span 2; }
-    #body-galeria main .box-galeria .foto-dos {
+    #body-galeria .main-galeria .box-galeria .foto-dos {
       background-image: url(../img/galeria-dos.jpg); }
-    #body-galeria main .box-galeria .foto-tres {
+    #body-galeria .main-galeria .box-galeria .foto-tres {
       background-image: url(../img/galeria-tres.jpg); }
-    #body-galeria main .box-galeria .foto-cuatro {
+    #body-galeria .main-galeria .box-galeria .foto-cuatro {
       background-image: url(../img/galeria-cuatro.jpg);
       grid-column: span 2; }
-    #body-galeria main .box-galeria .foto-cinco {
+    #body-galeria .main-galeria .box-galeria .foto-cinco {
       background-image: url(../img/galeria-cinco.jpg);
       grid-row: span 2; }
-    #body-galeria main .box-galeria .foto-seis {
+    #body-galeria .main-galeria .box-galeria .foto-seis {
       background-image: url(../img/galeria-seis.jpg); }
-    #body-galeria main .box-galeria .foto-siete {
+    #body-galeria .main-galeria .box-galeria .foto-siete {
       background-image: url(../img/galeria-siete.jpg);
       grid-column: span 3; }
+
+/* mq para mobile */
+@media screen and (max-width: 600px) {
+  .main-galeria .animate__animated {
+    overflow: hidden;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%); }
+    .main-galeria .animate__animated .box-galeria .foto-cinco,
+    .main-galeria .animate__animated .box-galeria .foto-uno,
+    .main-galeria .animate__animated .box-galeria .foto-cuatro,
+    .main-galeria .animate__animated .box-galeria .foto-siete {
+      display: none; } }
 
 #box-contacto div form .area-ct, #box-contacto div form .input-ct {
   width: 80rem;
@@ -286,6 +318,20 @@ main .grid-promos {
     padding: 10rem;
     grid-column: span 2; }
 
+/* mq para mobile */
+@media screen and (max-width: 600px) {
+  main .grid-promos {
+    overflow: hidden;
+    max-width: 100vh;
+    height: auto;
+    grid-template-columns: 50% 50%; }
+    main .grid-promos .box-dos {
+      grid-column: span 1; }
+    main .grid-promos .box-cuatro {
+      grid-column: span 1; }
+    main .grid-promos .box-seis {
+      grid-column: span 1; } }
+
 #box-contacto div form .area-ct, #box-contacto div form .input-ct {
   width: 80rem;
   padding: 10px;
@@ -316,3 +362,8 @@ main .box-servicios {
   main .box-servicios div p {
     margin-top: 1rem;
     color: black; }
+
+/* mq para mobile */
+@media screen and (max-width: 600px) {
+  main .box-servicios {
+    display: block; } }

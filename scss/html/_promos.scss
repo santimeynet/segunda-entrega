@@ -45,3 +45,21 @@ main{
         }
     }
 }
+
+/* mq para mobile */
+@media screen and (max-width:600px){
+    main{
+        .grid-promos{
+            @include promos-mobile;
+            .box-dos{
+                grid-column: span 1;
+            }
+            .box-cuatro{
+                grid-column: span 1;
+            }
+            .box-seis{
+                grid-column: span 1;
+            }
+        }
+    }
+}

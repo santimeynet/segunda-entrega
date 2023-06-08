@@ -117,3 +117,24 @@
     background-color: $color-footer;
     padding: 0.3rem;
 }
+
+@mixin box-img{
+    display: block;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+@mixin promos-mobile{
+    overflow: hidden;
+    max-width: 100vh;
+    height: auto;
+    grid-template-columns: 50% 50%;
+}
+
+@mixin galeria-mobile{
+    overflow: hidden;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+}

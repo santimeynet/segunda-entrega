@@ -45,3 +45,27 @@
     @include mapa;
     
 }
+
+/* mq para mobile */
+@media screen and (max-width:600px){
+    #box-contacto{
+        display: none; 
+    }
+
+    .box-img-ct{
+        @include box-img;
+        .box-telefono{
+            margin-bottom: 0;
+        }
+        .box-direccion{
+            margin-bottom: 0;
+        }
+        .box-mail{
+            margin-bottom: 0;
+        }
+    }
+
+    .box-mapa{
+        display: none;
+    }
+}
