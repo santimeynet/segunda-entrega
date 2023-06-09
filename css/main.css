@@ -18,7 +18,10 @@ header {
   background-color: white; }
 
 .ul {
-  color: black; }
+  color: black;
+  text-decoration: none;
+  margin-left: 1rem;
+  gap: 1rem; }
 
 header .nav-color {
   background-color: white !important;
@@ -61,6 +64,18 @@ main section .reserva {
   align-items: center;
   justify-content: center;
   gap: 2rem; }
+
+main section .boton-reserva {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: transform 0.3s ease; }
+
+main section .boton-reserva:hover {
+  transform: scale(0.95); }
 
 main .section-home {
   margin-top: 3rem;
@@ -109,13 +124,19 @@ main .section-home {
     display: block;
     text-align: center; }
     main section .reserva .boton-reserva {
-      color: whitesmoke;
       background-color: black;
-      padding: 0.3rem; }
+      color: white;
+      border: none;
+      padding: 10px 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: transform 0.3s ease; }
   main .section-home {
     display: block; }
-  footer {
-    text-align: start; } }
+  footer h3 {
+    text-align: start; }
+  footer h4 {
+    right: 0px; } }
 
 .contacto-map #box-contacto div form .area-ct, .contacto-map #box-contacto div form .input-ct {
   width: 100%;
@@ -223,7 +244,10 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
   main #box-contacto {
     display: none; }
   main .box-mapa {
-    display: none; } }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px; } }
 
 .contacto-map #box-contacto div form .area-ct, .contacto-map #box-contacto div form .input-ct {
   width: 100%;
@@ -268,16 +292,48 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
     #body-galeria .main-galeria .box-galeria .foto-tres {
       background-image: url(../img/galeria-tres.jpg); }
     #body-galeria .main-galeria .box-galeria .foto-cuatro {
-      background-image: url(../img/galeria-cuatro.jpg);
+      background-image: url(../img/shuka-portada-dos.jpg);
       grid-column: span 2; }
     #body-galeria .main-galeria .box-galeria .foto-cinco {
-      background-image: url(../img/galeria-cinco.jpg);
+      background-image: url(../img/shuka-portada.jpg);
       grid-row: span 2; }
     #body-galeria .main-galeria .box-galeria .foto-seis {
       background-image: url(../img/galeria-seis.jpg); }
     #body-galeria .main-galeria .box-galeria .foto-siete {
       background-image: url(../img/galeria-siete.jpg);
       grid-column: span 3; }
+  #body-galeria .main-galeria section .grid-galeria-dos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 150rem;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
+    background-size: cover; }
+    #body-galeria .main-galeria section .grid-galeria-dos .fotos {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 8rem; }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-ocho {
+      background-image: url(../img/galeria-ocho.jpg);
+      grid-column: span 1; }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-nueve {
+      background-image: url(../img/galeria-nueve.jpg); }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-diez {
+      background-image: url(../img/galeria-diez.jpg); }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-once {
+      background-image: url(../img/galeria-once.jpg); }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-doce {
+      background-image: url(../img/galeria-doce.jpg); }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-trece {
+      background-image: url(../img/galeria-trece.jpg); }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-catorce {
+      background-image: url(../img/galeria-catorce.jpg); }
+    #body-galeria .main-galeria section .grid-galeria-dos .foto-quince {
+      background-image: url(../img/galeria-quince.jpg); }
 
 /* mq para mobile */
 @media screen and (max-width: 600px) {
@@ -295,7 +351,17 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
     .main-galeria .box-galeria .foto-cuatro {
       display: none; }
     .main-galeria .box-galeria .foto-siete {
-      display: none; } }
+      display: none; }
+  .main-galeria section .grid-galeria-dos .fotos {
+    grid-column: 1 / span 2; }
+  .main-galeria section .grid-galeria-dos .foto-ocho {
+    display: none; }
+  .main-galeria section .grid-galeria-dos .foto-diez {
+    display: none; }
+  .main-galeria section .grid-galeria-dos .foto-trece {
+    display: none; }
+  .main-galeria section .grid-galeria-dos .foto-quince {
+    display: none; } }
 
 /* mq para tablet */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -345,22 +411,32 @@ main .grid-promos {
     width: 100%; }
     main .grid-promos .grid-box p {
       margin-left: 10px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      font-size: 1.3rem; }
     main .grid-promos .grid-box .texto-promo {
       margin-top: 1rem; }
     main .grid-promos .grid-box .boton-promo {
       background-color: whitesmoke;
-      padding: 0.6rem; }
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease; }
+    main .grid-promos .grid-box .boton-promo:hover {
+      background-color: lightgray;
+      cursor: pointer; }
   main .grid-promos .box-dos {
-    background-image: url(../img/promo-uno.jpg);
+    background-image: url(../img/promocion-uno.png);
     padding: 10rem;
     grid-column: span 2; }
   main .grid-promos .box-cuatro {
-    background-image: url(../img/promo-dos.jpg);
+    background-image: url(../img/promocion-dos.png);
     padding: 10rem;
     grid-column: span 2; }
   main .grid-promos .box-seis {
-    background-image: url(../img/promo-tres.jpg);
+    background-image: url(../img/promocion-tres.jfif);
     padding: 10rem;
     grid-column: span 2; }
 

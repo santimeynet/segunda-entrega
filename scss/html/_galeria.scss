@@ -26,11 +26,11 @@
                 background-image: url(../img/galeria-tres.jpg);
             }
             .foto-cuatro{
-                background-image: url(../img/galeria-cuatro.jpg);
+                background-image: url(../img/shuka-portada-dos.jpg);
                 grid-column: span 2;
             }
             .foto-cinco{
-                background-image: url(../img/galeria-cinco.jpg);
+                background-image: url(../img/shuka-portada.jpg);
                 grid-row: span 2;
             }
             .foto-seis{
@@ -41,6 +41,41 @@
                 grid-column: span 3;
             }
         }
+        section{
+            .grid-galeria-dos{
+                @include box-galeria-dos;
+                .fotos{
+                    @include background;
+                    padding: 8rem;
+                }
+                .foto-ocho{
+                    background-image: url(../img/galeria-ocho.jpg);
+                    grid-column: span 1;
+                }
+                .foto-nueve{
+                    background-image: url(../img/galeria-nueve.jpg);
+                }
+                .foto-diez{
+                    background-image: url(../img/galeria-diez.jpg);
+                }
+                .foto-once{
+                    background-image: url(../img/galeria-once.jpg);
+                }
+                .foto-doce{
+                    background-image: url(../img/galeria-doce.jpg);
+                }
+                .foto-trece{
+                    background-image: url(../img/galeria-trece.jpg);
+                }
+                .foto-catorce{
+                    background-image: url(../img/galeria-catorce.jpg);
+                }
+                .foto-quince{
+                    background-image: url(../img/galeria-quince.jpg);
+                }
+            }
+        }
+            
     }
 }
 
@@ -62,6 +97,26 @@
                 display: none;
             }
         }
+        section{
+            .grid-galeria-dos{
+                .fotos{
+                    grid-column: 1 / span 2;
+                }
+                .foto-ocho{
+                    display: none;
+                }
+                .foto-diez{
+                    display: none;
+                }
+                .foto-trece{
+                    display: none;
+                }
+                .foto-quince{
+                    display: none;
+                }
+            }
+            
+        }
     }
 }
 
@@ -77,5 +132,6 @@
                 display: none;
             }
         }
+        
     }
 }

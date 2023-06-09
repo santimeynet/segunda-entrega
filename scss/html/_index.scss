@@ -16,6 +16,9 @@ header{
 
 .ul{
     color: $color-footer;
+    text-decoration: none;
+    margin-left: 1rem;
+    gap: 1rem;
 }
 
 header .nav-color{
@@ -56,6 +59,12 @@ main{
     section{
         .reserva{
             @include reserva;
+        }
+        .boton-reserva{
+            @include boton;
+        }
+        .boton-reserva:hover{
+            transform: scale(0.95);
         }
     }
     .section-home{
@@ -102,7 +111,7 @@ main{
                 display: block;
                 text-align: center;
                 .boton-reserva{
-                    @include boton-mq;
+                    @include boton;
                 }
             }
         }
@@ -111,6 +120,11 @@ main{
         }
     }
     footer{
-        text-align: start;
+        h3{
+            text-align: start;
+        }
+        h4{
+            right: 0px;
+        }
     }
 }

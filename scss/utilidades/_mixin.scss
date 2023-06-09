@@ -3,6 +3,7 @@
 
 //mixin
 
+//mixin index
 @mixin banner{
     background-image: url(../img/main-portada.jpg);
     background-size: cover;
@@ -39,6 +40,17 @@
     padding-top: 1rem;
 }
 
+@mixin boton{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+//mixin contacto
 @mixin contacto-h1{
     margin-top: 1rem;
     margin-left: 2rem;
@@ -83,6 +95,7 @@
     background-size: cover;
 }
 
+//mixin promos
 @mixin grid-promos{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -91,12 +104,24 @@
     margin-bottom: 2rem;
 }
 
+@mixin promo-btn{
+    background-color: $color-principal;
+    color: $color-footer;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 @mixin background{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+//mixin servicios
 @mixin servicios{
     display: flex;
     padding-top: 4rem;
@@ -107,9 +132,9 @@
     font-weight: 700;
 }
 
+//mixin galeria
 @mixin box-galeria{
     display: grid;
-    
     padding: 2rem;
     row-gap: 0.6rem;
     column-gap: 0.6rem;
@@ -117,6 +142,19 @@
     margin-bottom: 2rem;
 }
 
+@mixin box-galeria-dos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 150rem;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
+    background-size: cover;
+}
+
+//mixin mq
 @mixin boton-mq{
     color: $color-principal;
     background-color: $color-footer;
@@ -145,6 +183,14 @@
     grid-template-rows: repeat(3, 33%);
 }
 
+@mixin galeria-mobile-dos{
+    overflow: hidden;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
 @mixin mobile-galeria{
     overflow: hidden;
     padding: 1rem;
@@ -162,3 +208,4 @@
     grid-template-rows: repeat(3, 33%);
     row-gap: 1rem;
 }
+
