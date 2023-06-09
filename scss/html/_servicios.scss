@@ -23,3 +23,15 @@ main .box-servicios{
         }
     }
 }
+
+/* mq para tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    main{
+        .box-servicios{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}

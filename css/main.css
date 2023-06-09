@@ -117,15 +117,16 @@ main .section-home {
   footer {
     text-align: start; } }
 
-#box-contacto div form .area-ct, #box-contacto div form .input-ct {
-  width: 80rem;
+.contacto-map #box-contacto div form .area-ct, .contacto-map #box-contacto div form .input-ct {
+  width: 100%;
   padding: 10px;
   margin-left: 1.2rem; }
 
 .box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   color: whitesmoke;
   width: 100%; }
 
@@ -137,24 +138,38 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
   text-align: center; }
 
 /* estilos de contacto */
-#box-contacto div h1 {
-  margin-top: 1rem;
-  margin-left: 2rem;
-  padding-bottom: 20px;
-  font-weight: 700; }
-
-#box-contacto div form {
-  margin-left: 1rem; }
-  #box-contacto div form label {
-    display: block;
-    margin-top: 10px;
-    margin-left: 1.2rem; }
-  #box-contacto div form .boton-contacto {
-    background-color: black;
-    color: whitesmoke;
-    margin-left: 1.2rem;
-    padding: 0.5rem 2rem;
-    font-weight: 300; }
+.contacto-map {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto-map #box-contacto {
+    width: 40%; }
+    .contacto-map #box-contacto div h1 {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      padding-bottom: 20px;
+      font-weight: 700; }
+    .contacto-map #box-contacto div form {
+      margin-left: 1rem; }
+      .contacto-map #box-contacto div form label {
+        display: block;
+        margin-top: 10px;
+        margin-left: 1.2rem; }
+      .contacto-map #box-contacto div form .boton-contacto {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 1.1rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+      .contacto-map #box-contacto div form .boton-contacto:hover {
+        background-color: #333; }
 
 .box-img-ct {
   display: flex;
@@ -176,14 +191,12 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
     background-size: cover; }
 
 .box-mapa {
-  margin-left: 18rem;
-  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-top: 4rem;
   display: flex;
   width: 55%;
   justify-content: center;
-  background-color: black;
-  padding: 1rem;
-  border-radius: 15px 15px 15px 15px; }
+  padding: 1rem; }
 
 /* mq para mobile */
 @media screen and (max-width: 600px) {
@@ -191,6 +204,7 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
     display: none; }
   .box-img-ct {
     display: block;
+    width: 100%;
     margin-bottom: 1rem;
     overflow: hidden; }
     .box-img-ct .box-telefono {
@@ -199,18 +213,28 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
       margin-bottom: 0; }
     .box-img-ct .box-mail {
       margin-bottom: 0; }
+    .box-img-ct .box-ct {
+      width: 33.33%; }
   .box-mapa {
     display: none; } }
 
-#box-contacto div form .area-ct, #box-contacto div form .input-ct {
-  width: 80rem;
+/* mq para tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  main #box-contacto {
+    display: none; }
+  main .box-mapa {
+    display: none; } }
+
+.contacto-map #box-contacto div form .area-ct, .contacto-map #box-contacto div form .input-ct {
+  width: 100%;
   padding: 10px;
   margin-left: 1.2rem; }
 
 .box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   color: whitesmoke;
   width: 100%; }
 
@@ -273,15 +297,30 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
     .main-galeria .box-galeria .foto-siete {
       display: none; } }
 
-#box-contacto div form .area-ct, #box-contacto div form .input-ct {
-  width: 80rem;
+/* mq para tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .main-galeria .box-galeria {
+    overflow: hidden;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 1rem; }
+    .main-galeria .box-galeria .foto-siete {
+      display: none; }
+    .main-galeria .box-galeria .foto-cuatro {
+      display: none; } }
+
+.contacto-map #box-contacto div form .area-ct, .contacto-map #box-contacto div form .input-ct {
+  width: 100%;
   padding: 10px;
   margin-left: 1.2rem; }
 
 .box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   color: whitesmoke;
   width: 100%; }
 
@@ -339,15 +378,16 @@ main .grid-promos {
     main .grid-promos .box-seis {
       grid-column: span 1; } }
 
-#box-contacto div form .area-ct, #box-contacto div form .input-ct {
-  width: 80rem;
+.contacto-map #box-contacto div form .area-ct, .contacto-map #box-contacto div form .input-ct {
+  width: 100%;
   padding: 10px;
   margin-left: 1.2rem; }
 
 .box-img-ct .box-telefono, .box-img-ct .box-direccion, .box-img-ct .box-mail {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   color: whitesmoke;
   width: 100%; }
 
@@ -361,7 +401,8 @@ main .grid-promos .box-uno, main .grid-promos .box-tres, main .grid-promos .box-
 /* estilos de servicios */
 main .box-servicios {
   display: flex;
-  padding: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   justify-content: center;
   gap: 4rem;
   text-align: center;
@@ -374,3 +415,11 @@ main .box-servicios {
 @media screen and (max-width: 600px) {
   main .box-servicios {
     display: block; } }
+
+/* mq para tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  main .box-servicios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }

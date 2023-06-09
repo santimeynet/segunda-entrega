@@ -1,7 +1,7 @@
 // extend
 
 %medida-ct{
-    width: 80rem;
+    width: 100%;
     padding: 10px;
     margin-left: 1.2rem;
 }
@@ -9,7 +9,8 @@
 %box-contacto{
     text-align: center;
     margin-bottom: 2rem;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     color: $color-principal;
     width: 100%;
 }

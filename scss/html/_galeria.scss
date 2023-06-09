@@ -48,7 +48,7 @@
 @media screen and (max-width:600px){
     .main-galeria{
         .box-galeria{
-            @include media-querie-galeria;
+            @include mobile-galeria;
             .foto-cinco{
                 display: none;
             }
@@ -59,6 +59,21 @@
                 display: none;
             }
             .foto-siete{
+                display: none;
+            }
+        }
+    }
+}
+
+/* mq para tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    .main-galeria{
+        .box-galeria{
+            @include tablet-galeria;
+            .foto-siete{
+                display: none;
+            }
+            .foto-cuatro{
                 display: none;
             }
         }

@@ -4,25 +4,35 @@
 @import "../utilidades/mixin";
 
 /* estilos de contacto */
-#box-contacto{
-    div{
-        h1{
-            @include contacto-h1;
-        }
-        form{
-            margin-left: 1rem;
-            label{
-                @include contacto-label;
+.contacto-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #box-contacto{
+        width: 40%;
+        div{
+            h1{
+                @include contacto-h1;
             }
-            .area-ct, .input-ct{
-                @extend %medida-ct;
-            }
-            .boton-contacto{
-                @include contacto-btn;
+            form{
+                margin-left: 1rem;
+                label{
+                    @include contacto-label;
+                }
+                .area-ct, .input-ct{
+                    @extend %medida-ct;
+                }
+                .boton-contacto{
+                    @include contacto-btn;
+                }
+                .boton-contacto:hover{
+                    background-color: #333;
+                }
             }
         }
     }
 }
+    
 
 .box-img-ct{
     display: flex;
@@ -63,9 +73,24 @@
         .box-mail{
             margin-bottom: 0;
         }
+        .box-ct{
+            width: 33.33%;
+        }
     }
 
     .box-mapa{
         display: none;
+    }
+}
+
+/* mq para tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    main{
+        #box-contacto{
+            display: none;
+        }
+        .box-mapa{
+            display: none;
+        }
     }
 }
