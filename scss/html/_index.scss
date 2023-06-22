@@ -44,10 +44,15 @@ footer{
 }
 
 /* estilos del index */
-header nav div .div-nav{
-    margin-left: 40%;
+header{
+    nav{
+        div{
+            .div-nav{
+                margin-left: 40%;
+            }
+        }
+    }
 }
-
 main{
     #div-home{
         z-index: 1;
